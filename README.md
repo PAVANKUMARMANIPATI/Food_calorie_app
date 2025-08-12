@@ -1,6 +1,4 @@
-Here’s your updated **Food Calorie App** deployment and development guide, emphasizing **Python** and **Django web development** while keeping your provided details intact:
 
----
 
 # **Food Calorie App**
 
@@ -67,6 +65,4 @@ A **Python-powered Django web application** for tracking food calories with a cl
 * **Django** provides the MVC framework, ORM, and routing for building a robust calorie tracking system.
 * Designed for **easy deployment** on Render and smooth local development.
 
----
 
-If you want, I can also create a **short README.md version** of this for your GitHub repo so it looks professional.

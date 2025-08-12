@@ -1,39 +1,72 @@
-# Food Calorie App
+Here’s your updated **Food Calorie App** deployment and development guide, emphasizing **Python** and **Django web development** while keeping your provided details intact:
 
-A Django-based application for tracking food calories.
+---
 
-## Deployment to Render
+# **Food Calorie App**
 
-1. Create a new Web Service on Render
-2. Connect your GitHub repository
-3. Set the following environment variables:
-   - `DEBUG=False`
-   - `SECRET_KEY` (generate a secure secret key)
-   - `ALLOWED_HOSTS=your-render-domain`
-   - `DATABASE_URL` (if using PostgreSQL)
+A **Python-powered Django web application** for tracking food calories with a clean backend and scalable deployment setup.
 
-4. Build Command: `pip install -r requirements.txt`
-5. Start Command: `gunicorn calorie_app.wsgi:application`
+## **Deployment to Render**
 
-## Local Development
+1. **Create a new Web Service** on [Render](https://render.com)
 
-1. Clone the repository
-2. Create a virtual environment:
+2. Connect your **GitHub repository**
+
+3. **Set the environment variables**:
+
+   * `DEBUG=False`
+   * `SECRET_KEY` *(generate a secure secret key)*
+   * `ALLOWED_HOSTS=your-render-domain`
+   * `DATABASE_URL` *(if using PostgreSQL)*
+
+4. **Build Command**:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Start Command**:
+
+   ```bash
+   gunicorn calorie_app.wsgi:application
+   ```
+
+---
+
+## **Local Development (Python & Django)**
+
+1. **Clone the repository**
+2. Create a **Python virtual environment**:
+
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
-3. Install dependencies:
+3. Install **dependencies**:
+
    ```bash
    pip install -r requirements.txt
    ```
-4. Create a .env file with your local settings
-5. Run migrations:
+4. Create a **.env** file with local settings
+5. Run **Django migrations**:
+
    ```bash
    python manage.py migrate
    ```
-6. Start the development server:
+6. Start the **Django development server**:
+
    ```bash
    python manage.py runserver
    ```
-"# Food_calorie_app" 
+
+---
+
+✅ **Key Focus**:
+
+* **Python** is the backbone of the application, handling all backend logic.
+* **Django** provides the MVC framework, ORM, and routing for building a robust calorie tracking system.
+* Designed for **easy deployment** on Render and smooth local development.
+
+---
+
+If you want, I can also create a **short README.md version** of this for your GitHub repo so it looks professional.
